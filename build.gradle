@@ -8,7 +8,7 @@ repositories {
 
 dependencies {
     compile (
-        'com.amazonaws.serverless:aws-serverless-java-container-core:1.2',
+        'com.amazonaws.serverless:aws-serverless-java-container-core:1.1.4',
         'javax.servlet.jsp:javax.servlet.jsp-api:2.3.1',
         'javax.el:javax.el-api:3.0.0',
         'com.amazonaws:aws-lambda-java-core:1.2.0',

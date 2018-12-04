@@ -18,4 +18,16 @@ component {
 		getLambdaContext().getLogger().log(arguments.msg);
 	}
 
+	public string function getRequestID() {
+		if (isNull(getLambdaContext())) {
+			//not running in lambda
+			if (!request.keyExists("_request_id")) {
+				request._request_id = createUUID();
+			}
+			return request._request_id;
+		} else {
+			return getLambdaContext().getAwsRequestId();
+		}
+	}
+
 }
