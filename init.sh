@@ -5,7 +5,7 @@ if [[ !$LUCEE_VERSION ]]; then
 fi
 
 if [[ !$FUSELESS_VERSION ]]; then
-	FUSELESS_VERSION="0.0.6"
+	FUSELESS_VERSION="0.0.7"
 fi
 
 if [ -f "jars/lucee-light-$LUCEE_VERSION.jar" ]; then
