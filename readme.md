@@ -9,6 +9,7 @@ A Template for building CFML powered AWS Lambda Functions.
 - Add your CFML to the `cfml/app/` folder
 - [Install Gradle](https://gradle.org/install/)
 - Run `gradle build` in terminal or command prompt
+- For continuous builds ( hot building ) run `gradle build -t`
 
 At this point you will now have a CFML serverless application all packaged up in a zip file 🎉 
 
