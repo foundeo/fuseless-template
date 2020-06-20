@@ -20,6 +20,6 @@ Resources:
         Variables:
           FELIX_CACHE_BUFSIZE: 16384
 Outputs:
-  CFMLSelectApi:
+  CFMLApi:
     Description: "API Gateway endpoint URL for Prod stage for CFML Select function"
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
