@@ -9,7 +9,7 @@ Resources:
       CodeUri: ./build/distributions/fuseless-template.zip
       Runtime: java8
       Timeout: 10
-      MemorySize: 256
+      MemorySize: 3008
       Events:
         GetResource:
           Type: Api
@@ -19,6 +19,7 @@ Resources:
       Environment:
         Variables:
           FELIX_CACHE_BUFSIZE: 16384
-
-
-
+Outputs:
+  CFMLSelectApi:
+    Description: "API Gateway endpoint URL for Prod stage for CFML Select function"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
