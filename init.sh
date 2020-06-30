@@ -1,11 +1,11 @@
 #!/bin/bash
 
 if [[ !$LUCEE_VERSION ]]; then
-	LUCEE_VERSION=5.3.1.87-RC
+	LUCEE_VERSION=5.3.6.61
 fi
 
 if [[ !$FUSELESS_VERSION ]]; then
-	FUSELESS_VERSION="0.0.7"
+	FUSELESS_VERSION="0.1.0"
 fi
 
 if [ -f "jars/lucee-light-$LUCEE_VERSION.jar" ]; then
