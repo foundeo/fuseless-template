@@ -7,9 +7,9 @@ Resources:
     Properties:
       Handler: com.foundeo.fuseless.StreamLambdaHandler
       CodeUri: ./build/distributions/fuseless-template.zip
-      Runtime: java8
+      Runtime: java11
       Timeout: 20
-      MemorySize: 256
+      MemorySize: 1856
       Events:
         GetResource:
           Type: Api
